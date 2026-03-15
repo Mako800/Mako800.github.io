@@ -101,4 +101,12 @@ theme: landscape
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Mako800/Mako800.github.io.git
+  branch: gh-pages
+
+markdown_it_plus:
+  plugins:
+    - plugin:
+        name: '@iktakahiro/markdown-it-katex'
+        enable: true
